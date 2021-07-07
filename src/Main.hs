@@ -7,17 +7,11 @@ import Data.Text
 import Data.Text.IO
 import Debug.Trace (trace)
 
-add :: Int -> Int -> Int
-add x y = x + y
-
-sub :: Int -> Int -> Int
-sub x y = x - y
-
 increment :: IORef Int -> IO ()
-increment ptr = modifyIORef ptr (`add` 1)
+increment ptr = modifyIORef ptr ((+) 1)
 
 decrement :: IORef Int -> IO ()
-decrement ptr = modifyIORef ptr (`sub` 1)
+decrement ptr = modifyIORef ptr ((-) 1)
 
 input :: IO Int
 input = do
