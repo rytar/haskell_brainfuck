@@ -4,7 +4,7 @@
 $ runghc ./src/Main.hs target_file
 ```
 
-GHC package is [here](https://www.haskell.org/ghc/)
+GHC package is [here](https://www.haskell.org/ghc/){:target="_blank"}
 
 # Example
 
