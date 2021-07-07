@@ -1,6 +1,12 @@
 # How to use
 
 ```sh
-$ ghc ./src/Main.hs
-$ ./src/Main target_file
+$ runghc ./src/Main.hs target_file
+```
+
+# Example
+
+```sh
+$ runghc ./src/Main.hs ./example/hello.bf
+Hello World!
 ```
