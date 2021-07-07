@@ -5,7 +5,6 @@ import Data.Array.IO
 import Data.Char (ord, chr)
 import Data.Text
 import Data.Text.IO
-import Debug.Trace (trace)
 
 increment :: IORef Int -> IO ()
 increment ptr = modifyIORef ptr ((+) 1)
