@@ -14,9 +14,12 @@ decrement ptr = modifyIORef ptr ((-) 1)
 
 input :: IO Int
 input = do
-    s <- System.IO.getContents
-    let c = s !! 0
-    return (ord c)
+    s <- System.IO.getLine
+    if s == "" then
+        return 0
+    else do
+        let c = s !! 0
+        return (ord c)
 
 untilIdx :: Text -> Int -> Int -> Int
 untilIdx str idx n = do
